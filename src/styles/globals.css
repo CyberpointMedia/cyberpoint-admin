@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #fff;
+}
+
+
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .error {
+    color: red;
+    margin-bottom: 20px;
+  }
+
+  input{
+    color: #000;
+  }
+
+  .menu-items-active, .menu-items-active > .cursor-pointer{
+    color: #ff561d;
+}
