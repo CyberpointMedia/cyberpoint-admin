@@ -1,0 +1,12 @@
+schema: "http://52.52.115.151:5000/graphql/"
+documents: "graphql/**/*.{ts,graphql}"
+generates:
+  src/pages/api/api.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+      - "typescript-apollo-client-helpers"
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
