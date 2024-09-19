@@ -1,3 +1,5 @@
+
+
 /** @type {import('next').NextConfig} */
 module.exports = {
   webpack(config) {
@@ -5,7 +7,6 @@ module.exports = {
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
-
     return config;
   },
 };

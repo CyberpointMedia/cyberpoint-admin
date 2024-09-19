@@ -22,7 +22,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed }) => {
   const isActiveMenu = (menu: string) => activeMenu === menu;
 
   return (
-    <div className={`h-screen bg-white border-r-4 border-r-gray-200 ${isCollapsed ? 'w-20' : 'w-64'} transition-width duration-300`}>
+    <div className={`fixed left-0 h-screen bg-white border-r-4 border-r-gray-200 ${isCollapsed ? 'w-36' : 'w-64'} transition-width duration-300 overflow-hidden`}>
       <div className="p-4 text-white text-center">
         <a href="#" className="text-center w-full block">
           <span className="font-semibold text-2xl text-[#ff561d]">CyberPoint</span>

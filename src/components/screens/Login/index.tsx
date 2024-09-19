@@ -57,7 +57,7 @@ export const Login = () => {
     <>
       <div className="relative max-w-md p-4 mx-auto bg-center bg-cover">
         <div className="flex h-screen">
-          <div className="w-full m-auto rounded-md bg-[#EFEAE3] border border-[#e9e9e9]">
+          <div className="w-full m-auto rounded-md bg-[#f6f6f6] border border-[#e9e9e9]">
             <div className="py-8 px-5">
               <a
                 href="javascript:void(0);"

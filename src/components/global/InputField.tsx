@@ -1,7 +1,10 @@
 import React, { FunctionComponent, useState } from "react";
 
-import ViewEyes from "../../../public/images/eye.svg";
-import ViewCloseEye from "../../../public/images/eye-close.svg";
+import Image from "next/image";
+
+import viewEye from "../../../public/images/eye-view.png";
+
+import offEye from "../../../public/images/eye-off.png";
 
 interface InputFieldProps {
   label: string;
@@ -50,20 +53,24 @@ const InputField: FunctionComponent<InputFieldProps> = ({
           required
         />
         <div
-          className={`absolute z-10 right-5 top-4 cursor-pointer ${passwordIconClass}`}
+          className={`absolute z-10 right-5 top-3 cursor-pointer ${passwordIconClass}`}
           onClick={() => handleTogglePassword()}
         >
           {type === "password" &&
             (showPassword ? (
-              <img
-                src={ViewEyes}
-                className="w-5 h-5 stroke-themePrimary"
+              <Image
+                src={offEye}
+                className=""
+                width={20}
+                height={20}
                 alt="Show"
               />
             ) : (
-              <img
-                src={ViewCloseEye}
-                className="w-5 h-5 stroke-themePrimary"
+              <Image
+                src={viewEye}
+                className=""
+                width={20}
+                height={20}
                 alt="Hide"
               />
             ))}
